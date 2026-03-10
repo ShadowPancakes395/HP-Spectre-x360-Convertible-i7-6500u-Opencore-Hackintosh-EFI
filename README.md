@@ -99,7 +99,7 @@ This repo contains the EFI folder and macrecovery.py
   3. If you are one of my friends on Linux, you will have to map after installing. Grab the [USBToolBox Release](https://github.com/USBToolBox/kext/releases/download/1.2.0/USBToolBox-1.2.0-RELEASE.zip) and grab UTBDefault.kext from there and place it into the Kexts folder. You will also need to update config.plist (replace `UTBMap.kext` with `UTBDefault.kext`).
 ### 3. Serial numbers, etc.
   1. Open config.plist with a text editor and go to PlatformInfo -> Generic. There are certain values here that we will need to edit.
-  2. Run `GenSMBIOS.py`. Pick 1, then 3. Then on your keyboard type Control+C.
+  2. Navigate into the GenSMBIOS folder. Run `py GenSMBIOS.py` for windows, or `python3 GenSMBIOS.py`. Pick 1, then 3. Then on your keyboard type Control+C.
   3. The `Type` part gets copied to Generic -> SystemProductName. `The Serial` part gets copied to Generic -> SystemSerialNumber. The `Board Serial` part gets copied to Generic -> MLB. The `SmUUID` part gets copied to Generic -> SystemUUID. The `ROM` part gets copied to Generic -> ROM.
 ### 4. BIOS Settings
   1. Restart your computer and mash either the *del* kep or *esc* key (or just search up which key to mash for your specific computer manufacturer to enter the BIOS settings).
