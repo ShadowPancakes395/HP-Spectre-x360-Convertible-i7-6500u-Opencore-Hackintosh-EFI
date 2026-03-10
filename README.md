@@ -101,7 +101,7 @@ This repo contains the EFI folder and macrecovery.py
   1. Open config.plist with a text editor and go to PlatformInfo -> Generic. There are certain values here that we will need to edit.
   2. Run `GenSMBIOS.py`. Pick 1, then 3. Then on your keyboard type Control+C.
   3. The `Type` part gets copied to Generic -> SystemProductName. `The Serial` part gets copied to Generic -> SystemSerialNumber. The `Board Serial` part gets copied to Generic -> MLB. The `SmUUID` part gets copied to Generic -> SystemUUID. The `ROM` part gets copied to Generic -> ROM.
-### 3. BIOS Settings
+### 4. BIOS Settings
   1. Restart your computer and mash either the *del* kep or *esc* key (or just search up which key to mash for your specific computer manufacturer to enter the BIOS settings).
   2. Some of these options my not be present in your firmware, but try to match up as closely as possible:
   3. Disable:
@@ -123,7 +123,7 @@ This repo contains the EFI folder and macrecovery.py
       5. EHCI/XHCI Hand-off
       6. DVMT Pre-Allocated(iGPU Memory): 64 MB or higher
       7. SATA Mode: AHCI
-### 4. Boot
+### 5. Boot
   1. Once you boot the USB, you'll likely get the following options:
       1. Windows
       2. macOS Base System (External / Install macOS ____ (External) / *USB Drive name* (External)
