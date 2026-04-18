@@ -124,12 +124,12 @@ This repo contains the EFI folder and macrecovery.py
       6. DVMT Pre-Allocated(iGPU Memory): 64 MB or higher
       7. SATA Mode: AHCI
 ### 5. Boot
-  1. Once you boot the USB, you'll likely get the following options:
+  1. Once you boot the USB, it will prompt you for a password. The default password is "12345", but you can change it by reading the Dortania Post-install guide. You'll then likely get the following options:
       1. Windows
       2. macOS Base System (External / Install macOS ____ (External) / *USB Drive name* (External)
       3. OpenShell.efi
       4. Reset NVRAM
-  2. We want to select the second option. If you don't see it, you might need to hit the the spacebar on your keyboard.
-  3. Now go into Disk Utility and create a new partition of filesystem APFS. Then go back and install macOS on that partition.
-  4. It will restart back to the Opencore boot menu. Now select `macOS installer` and it will continue installing. This will take some time until you reach the "Setup your Mac" screen.
-  5. Follow the [Opencore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/) to finish setting everything up.
+  3. We want to select the second option. If you don't see it, you might need to hit the the spacebar on your keyboard.
+  4. Now go into Disk Utility and create a new partition of filesystem APFS. Then go back and install macOS on that partition.
+  5. It will restart back to the Opencore boot menu. Now select `macOS installer` and it will continue installing. This will take some time until you reach the "Setup your Mac" screen.
+  6. Follow the [Opencore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/) to finish setting everything up.
